@@ -11,8 +11,17 @@
 
 The JupyterHub Helm chart is accompanied with an installation guide at [z2jh.jupyter.org](https://z2jh.jupyter.org). Together they enable you to deploy [JupyterHub](https://jupyterhub.readthedocs.io) in a Kubernetes cluster that can make Jupyter environments available to several thousands of simultaneous users.
 
-## History
+## 構築手順
 
-Much of the initial groundwork for this documentation is information learned from the successful use of JupyterHub and Kubernetes at UC Berkeley in their [Data 8](http://data8.org/) program.
-
-![](https://raw.githubusercontent.com/jupyterhub/zero-to-jupyterhub-k8s/HEAD/docs/source/_static/images/data8_massive_audience.jpg)
+初期構築手順
+```bash
+helm upgrade --install jupyter ./
+```
+更新手順
+```bash
+helm upgrade jupyter ./
+```
+削除手順
+```bash
+helm delete jupyter
+```
